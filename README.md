@@ -6,10 +6,10 @@ Replace env vars here with actual values.
 
 ```
 export GKE_NAME=gke-acm-demo-cluster
-export GKE_SA=
+export GKE_SA=gke-primary-pool
 export GKE_LOCATION=us-central1
 export GKE_CONFIGS_REPO_URL=https://github.com/mbychkowski/gcp-acm-workshop-gke-configs
-export TENANT_PROJECT_ID=
+export TENANT_PROJECT_ID=qwiklabs-gcp-04-24351b679a98
 ```
 
 ```
