@@ -1,0 +1,15 @@
+apiVersion: gkehub.cnrm.cloud.google.com/v1beta1
+kind: GKEHubMembership
+metadata:
+  name: gke
+  namespace: prj-bych-gke-lab001
+  annotations:
+    config.kubernetes.io/depends-on: container.cnrm.cloud.google.com/namespaces/prj-bych-gke-lab001/ContainerCluster/gke
+spec:
+  location: global
+  authority:
+    issuer: https://container.googleapis.com/v1/projects/prj-bych-gke-lab001/locations/northamerica-northeast1/clusters/gke
+  endpoint:
+    gkeCluster:
+      resourceRef:
+        name: gke

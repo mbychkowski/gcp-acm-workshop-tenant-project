@@ -1,0 +1,10 @@
+apiVersion: gkehub.cnrm.cloud.google.com/v1beta1
+kind: GKEHubFeature
+metadata:
+  name: configmanagement
+  namespace: prj-bych-gke-lab001
+spec:
+  projectRef:
+    external: prj-bych-gke-lab001
+  location: global
+  resourceID: configmanagement
