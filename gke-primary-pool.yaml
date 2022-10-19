@@ -8,7 +8,7 @@ metadata:
 spec:
   clusterRef:
     name: gke
-  initialNodeCount: 1
+  initialNodeCount: 2
   location: northamerica-northeast1
   management:
     autoRepair: true
