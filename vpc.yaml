@@ -1,0 +1,8 @@
+apiVersion: compute.cnrm.cloud.google.com/v1beta1
+kind: ComputeNetwork
+metadata:
+  name: gke
+  namespace: prj-bych-gke-lab001
+spec:
+  routingMode: REGIONAL
+  autoCreateSubnetworks: false

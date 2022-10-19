@@ -1,0 +1,18 @@
+apiVersion: compute.cnrm.cloud.google.com/v1beta1
+kind: ComputeRouterNAT
+metadata:
+  name: gke
+  namespace: prj-bych-gke-lab001
+  annotations:
+    config.kubernetes.io/depends-on: compute.cnrm.cloud.google.com/namespaces/prj-bych-gke-lab001/ComputeSubnetwork/gke,compute.cnrm.cloud.google.com/namespaces/prj-bych-gke-lab001/ComputeRouter/gke
+spec:
+  natIpAllocateOption: AUTO_ONLY
+  region: northamerica-northeast1
+  routerRef:
+    name: gke
+  sourceSubnetworkIpRangesToNat: LIST_OF_SUBNETWORKS
+  subnetwork:
+  - subnetworkRef:
+      name: gke
+    sourceIpRangesToNat:
+    - ALL_IP_RANGES
