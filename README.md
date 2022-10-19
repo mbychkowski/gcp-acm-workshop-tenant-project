@@ -13,7 +13,7 @@ export TENANT_PROJECT_ID=qwiklabs-gcp-04-24351b679a98
 ```
 
 ```
-sed -i 's/gke-acm-demo-cluster/${GKE_NAME}/g' templates/*
+sed -i 's/${GKE_NAME}/gke-acm-demo-cluster/g' templates/*
 sed -i 's/${GKE_SA}/gke-acm-demo-cluster/g' templates/*
 sed -i 's/${GKE_LOCATION}/gke-acm-demo-cluster/g' templates/*
 sed -i 's/${GKE_CONFIGS_REPO_URL}/gke-acm-demo-cluster/g' templates/*
