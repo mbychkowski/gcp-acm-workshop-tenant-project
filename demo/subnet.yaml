@@ -6,12 +6,12 @@ metadata:
   annotations:
     config.kubernetes.io/depends-on: compute.cnrm.cloud.google.com/namespaces/qwiklabs-gcp-00-13ac835469c2/ComputeNetwork/gke-acm-demo-cluster
 spec:
-  ipCidrRange: 10.2.0.0/20
+  ipCidrRange: 10.10.0.0/20
   region: us-central1
   networkRef:
     name: gke-acm-demo-cluster
   secondaryIpRange:
   - rangeName: servicesrange
-    ipCidrRange: 10.5.0.0/20
+    ipCidrRange: 10.12.0.0/20
   - rangeName: clusterrange
-    ipCidrRange: 10.6.0.0/20
+    ipCidrRange: 10.13.0.0/20
