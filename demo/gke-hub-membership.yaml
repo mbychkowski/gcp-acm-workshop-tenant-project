@@ -1,0 +1,15 @@
+apiVersion: gkehub.cnrm.cloud.google.com/v1beta1
+kind: GKEHubMembership
+metadata:
+  name: gke-acm-demo-cluster
+  namespace: qwiklabs-gcp-04-24351b679a98
+  annotations:
+    config.kubernetes.io/depends-on: container.cnrm.cloud.google.com/namespaces/qwiklabs-gcp-04-24351b679a98/ContainerCluster/gke-acm-demo-cluster
+spec:
+  location: global
+  authority:
+    issuer: https://container.googleapis.com/v1/projects/qwiklabs-gcp-04-24351b679a98/locations/us-central1/clusters/gke-acm-demo-cluster
+  endpoint:
+    gkeCluster:
+      resourceRef:
+        name: gke-acm-demo-cluster

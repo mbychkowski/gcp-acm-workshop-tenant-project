@@ -1,0 +1,10 @@
+apiVersion: gkehub.cnrm.cloud.google.com/v1beta1
+kind: GKEHubFeature
+metadata:
+  name: configmanagement
+  namespace: qwiklabs-gcp-04-24351b679a98
+spec:
+  projectRef:
+    external: qwiklabs-gcp-04-24351b679a98
+  location: global
+  resourceID: configmanagement

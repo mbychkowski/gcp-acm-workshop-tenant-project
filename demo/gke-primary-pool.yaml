@@ -1,0 +1,29 @@
+apiVersion: container.cnrm.cloud.google.com/v1beta1
+kind: ContainerNodePool
+metadata:
+  name: primary
+  namespace: qwiklabs-gcp-04-24351b679a98
+  annotations:
+    config.kubernetes.io/depends-on: container.cnrm.cloud.google.com/namespaces/qwiklabs-gcp-04-24351b679a98/ContainerCluster/gke-acm-demo-cluster
+spec:
+  clusterRef:
+    name: gke-acm-demo-cluster
+  initialNodeCount: 1
+  location: us-central1
+  management:
+    autoRepair: true
+    autoUpgrade: true
+  nodeConfig:
+    imageType: COS_CONTAINERD
+    diskSizeGb: 100
+    diskType: pd-ssd
+    labels:
+      gke.io/nodepool: primary
+    machineType: n2d-standard-4
+    oauthScopes:
+      - https://www.googleapis.com/auth/cloud-platform
+    shieldedInstanceConfig:
+      enableIntegrityMonitoring: true
+      enableSecureBoot: true
+    serviceAccountRef:
+      name: gke-primary-pool
