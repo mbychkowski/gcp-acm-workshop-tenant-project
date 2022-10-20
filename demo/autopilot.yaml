@@ -1,11 +1,11 @@
-# apiVersion: container.cnrm.cloud.google.com/v1beta1
-# kind: ContainerCluster
-# metadata:
-#   name: containercluster-sample-autopilot
-#   namespace: qwiklabs-gcp-00-1e8674755913
-# spec:
-#   description: An autopilot cluster.
-#   enableAutopilot: true
-#   location: us-west1
-#   releaseChannel:
-#     channel: REGULAR
+apiVersion: container.cnrm.cloud.google.com/v1beta1
+kind: ContainerCluster
+metadata:
+  name: containercluster-sample-autopilot
+  namespace: qwiklabs-gcp-00-1e8674755913
+spec:
+  description: An autopilot cluster.
+  enableAutopilot: true
+  location: us-west1
+  releaseChannel:
+    channel: REGULAR
