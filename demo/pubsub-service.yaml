@@ -1,7 +1,0 @@
-apiVersion: serviceusage.cnrm.cloud.google.com/v1beta1
-kind: Service
-metadata:
-  name: pubsub.googleapis.com
-spec:
-  projectRef:
-    external: projects/qwiklabs-gcp-00-13ac835469c2
