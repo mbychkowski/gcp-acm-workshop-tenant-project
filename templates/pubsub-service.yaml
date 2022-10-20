@@ -1,0 +1,8 @@
+apiVersion: serviceusage.cnrm.cloud.google.com/v1beta1
+kind: Service
+metadata:
+  name: pubsub.googleapis.com
+  namespace: ${TENANT_PROJECT_ID}
+spec:
+  projectRef:
+    external: projects/${TENANT_PROJECT_ID}
