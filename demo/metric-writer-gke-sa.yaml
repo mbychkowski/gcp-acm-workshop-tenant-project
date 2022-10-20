@@ -2,15 +2,15 @@
 # kind: IAMPolicyMember
 # metadata:
 #   name: metric-writer
-#   namespace: qwiklabs-gcp-04-24351b679a98
+#   namespace: qwiklabs-gcp-00-13ac835469c2
 #   annotations:
-#     config.kubernetes.io/depends-on: iam.cnrm.cloud.google.com/namespaces/qwiklabs-gcp-04-24351b679a98/IAMServiceAccount/gke-primary-pool
+#     config.kubernetes.io/depends-on: iam.cnrm.cloud.google.com/namespaces/qwiklabs-gcp-00-13ac835469c2/IAMServiceAccount/gke-primary-pool
 # spec:
 #   memberFrom:
 #     serviceAccountRef:
 #       name: gke-primary-pool
-#       namespace: qwiklabs-gcp-04-24351b679a98
+#       namespace: qwiklabs-gcp-00-13ac835469c2
 #   resourceRef:
 #     kind: Project
-#     external: qwiklabs-gcp-04-24351b679a98
+#     external: qwiklabs-gcp-00-13ac835469c2
 #   role: roles/monitoring.metricWriter

@@ -2,9 +2,9 @@
 # kind: GKEHubFeature
 # metadata:
 #   name: configmanagement
-#   namespace: qwiklabs-gcp-04-24351b679a98
+#   namespace: qwiklabs-gcp-00-13ac835469c2
 # spec:
 #   projectRef:
-#     external: qwiklabs-gcp-04-24351b679a98
+#     external: qwiklabs-gcp-00-13ac835469c2
 #   location: global
 #   resourceID: configmanagement

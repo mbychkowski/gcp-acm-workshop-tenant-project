@@ -2,12 +2,12 @@
 # kind: GKEHubFeatureMembership
 # metadata:
 #   name: gke-acm-demo-cluster-acm-membership
-#   namespace: qwiklabs-gcp-04-24351b679a98
+#   namespace: qwiklabs-gcp-00-13ac835469c2
 #   annotations:
-#     config.kubernetes.io/depends-on: gkehub.cnrm.cloud.google.com/namespaces/qwiklabs-gcp-04-24351b679a98/GKEHubMembership/gke-acm-demo-cluster,gkehub.cnrm.cloud.google.com/namespaces/qwiklabs-gcp-04-24351b679a98/GKEHubFeature/configmanagement
+#     config.kubernetes.io/depends-on: gkehub.cnrm.cloud.google.com/namespaces/qwiklabs-gcp-00-13ac835469c2/GKEHubMembership/gke-acm-demo-cluster,gkehub.cnrm.cloud.google.com/namespaces/qwiklabs-gcp-00-13ac835469c2/GKEHubFeature/configmanagement
 # spec:
 #   projectRef:
-#     external: qwiklabs-gcp-04-24351b679a98
+#     external: qwiklabs-gcp-00-13ac835469c2
 #   location: global
 #   membershipRef:
 #     name: gke-acm-demo-cluster
@@ -20,7 +20,7 @@
 #         policyDir: .
 #         secretType: none
 #         syncBranch: main
-#         syncRepo: https://github.com/mbychkowski/gcp-acm-workshop-gke-configs
+#         syncRepo: https://github.com/mbychkowski/gcp-acm-workshop-gke-configs.git
 #     policyController:
 #       enabled: true
 #       referentialRulesEnabled: true
