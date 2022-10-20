@@ -1,11 +1,11 @@
 apiVersion: compute.cnrm.cloud.google.com/v1beta1
 kind: ComputeRouter
 metadata:
-  name: ${GKE_NAME}
-  namespace: ${TENANT_PROJECT_ID}
+  name: gke-acm-demo-cluster
+  namespace: qwiklabs-gcp-04-24351b679a98
   annotations:
-    config.kubernetes.io/depends-on: compute.cnrm.cloud.google.com/namespaces/${TENANT_PROJECT_ID}/ComputeNetwork/${GKE_NAME}
+    config.kubernetes.io/depends-on: compute.cnrm.cloud.google.com/namespaces/qwiklabs-gcp-04-24351b679a98/ComputeNetwork/gke-acm-demo-cluster
 spec:
   networkRef:
-    name: ${GKE_NAME}
-  region: ${GKE_LOCATION}
+    name: gke-acm-demo-cluster
+  region: us-central1

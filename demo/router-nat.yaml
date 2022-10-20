@@ -1,18 +1,18 @@
 apiVersion: compute.cnrm.cloud.google.com/v1beta1
 kind: ComputeRouterNAT
 metadata:
-  name: ${GKE_NAME}
-  namespace: ${TENANT_PROJECT_ID}
+  name: gke-acm-demo-cluster
+  namespace: qwiklabs-gcp-04-24351b679a98
   annotations:
-    config.kubernetes.io/depends-on: compute.cnrm.cloud.google.com/namespaces/${TENANT_PROJECT_ID}/ComputeSubnetwork/${GKE_NAME},compute.cnrm.cloud.google.com/namespaces/${TENANT_PROJECT_ID}/ComputeRouter/${GKE_NAME}
+    config.kubernetes.io/depends-on: compute.cnrm.cloud.google.com/namespaces/qwiklabs-gcp-04-24351b679a98/ComputeSubnetwork/gke-acm-demo-cluster,compute.cnrm.cloud.google.com/namespaces/qwiklabs-gcp-04-24351b679a98/ComputeRouter/gke-acm-demo-cluster
 spec:
   natIpAllocateOption: AUTO_ONLY
-  region: ${GKE_LOCATION}
+  region: us-central1
   routerRef:
-    name: ${GKE_NAME}
+    name: gke-acm-demo-cluster
   sourceSubnetworkIpRangesToNat: LIST_OF_SUBNETWORKS
   subnetwork:
   - subnetworkRef:
-      name: ${GKE_NAME}
+      name: gke-acm-demo-cluster
     sourceIpRangesToNat:
     - ALL_IP_RANGES

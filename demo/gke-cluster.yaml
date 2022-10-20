@@ -7,7 +7,7 @@ metadata:
     cnrm.cloud.google.com/remove-default-node-pool: "true"
     config.kubernetes.io/depends-on: compute.cnrm.cloud.google.com/namespaces/qwiklabs-gcp-04-24351b679a98/ComputeSubnetwork/gke-acm-demo-cluster
   labels:
-    mesh_id: proj-${TENANT_PROJECT_NUMBER}
+    mesh_id: proj-825333292539
 spec:
   addonsConfig:
     dnsCacheConfig:

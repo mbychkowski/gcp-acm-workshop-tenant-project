@@ -1,8 +1,8 @@
 apiVersion: compute.cnrm.cloud.google.com/v1beta1
 kind: ComputeNetwork
 metadata:
-  name: ${GKE_NAME}
-  namespace: ${TENANT_PROJECT_ID}
+  name: gke-acm-demo-cluster
+  namespace: qwiklabs-gcp-04-24351b679a98
 spec:
   routingMode: REGIONAL
   autoCreateSubnetworks: false

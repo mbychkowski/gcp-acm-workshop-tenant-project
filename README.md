@@ -10,13 +10,15 @@ export GKE_SA=gke-primary-pool
 export GKE_LOCATION=us-central1
 export GKE_CONFIGS_REPO_URL="https://github.com/mbychkowski/gcp-acm-workshop-gke-configs"
 export TENANT_PROJECT_ID=qwiklabs-gcp-04-24351b679a98
+export TENANT_PROJECT_NUMBER=825333292539
 ```
 
 ```
-sed -i 's/${GKE_NAME}/'"$GKE_NAME"'/g' ./*
-sed -i 's/${GKE_SA}/'"$GKE_SA"'/g' ./*
-sed -i 's/${GKE_LOCATION}/'"$GKE_LOCATION"'/g' ./*
-sed -i 's/${GKE_CONFIGS_REPO_URL}/'"$GKE_CONFIGS_REPO_URL"'/g' ./*
-sed -i 's/${TENANT_PROJECT_ID}/'"$TENANT_PROJECT_ID"'/g' ./*
+sed -i 's/${GKE_NAME}/'"$GKE_NAME"'/g' ./*.yaml
+sed -i 's/${GKE_SA}/'"$GKE_SA"'/g' ./*.yaml
+sed -i 's/${GKE_LOCATION}/'"$GKE_LOCATION"'/g' ./*.yaml
+sed -i 's/${GKE_CONFIGS_REPO_URL}/'"$GKE_CONFIGS_REPO_URL"'/g' ./*.yaml
+sed -i 's/${TENANT_PROJECT_ID}/'"$TENANT_PROJECT_ID"'/g' ./*.yaml
+sed -i 's/${TENANT_PROJECT_NUMBER}/'"$TENANT_PROJECT_NUMBER"'/g' ./*.yaml
 ```
 
