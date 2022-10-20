@@ -1,0 +1,8 @@
+apiVersion: core.cnrm.cloud.google.com/v1beta1
+kind: ConfigConnectorContext
+metadata:
+  name: configconnectorcontext.core.cnrm.cloud.google.com
+  annotations:
+    config.kubernetes.io/depends-on: iam.cnrm.cloud.google.com/namespaces/config-control/IAMServiceAccount/qwiklabs-gcp-01-613722232c89
+spec:
+  googleServiceAccount: qwiklabs-gcp-01-613722232c89@qwiklabs-gcp-01-613722232c89.iam.gserviceaccount.com
