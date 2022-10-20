@@ -1,7 +1,7 @@
-apiVersion: iam.cnrm.cloud.google.com/v1beta1
-kind: IAMServiceAccount
-metadata:
-  name: gke-primary-pool
-  namespace: qwiklabs-gcp-00-13ac835469c2
-spec:
-  displayName: gke-primary-pool
+# apiVersion: iam.cnrm.cloud.google.com/v1beta1
+# kind: IAMServiceAccount
+# metadata:
+#   name: gke-primary-pool
+#   namespace: qwiklabs-gcp-00-13ac835469c2
+# spec:
+#   displayName: gke-primary-pool
